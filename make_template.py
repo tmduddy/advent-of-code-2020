@@ -9,7 +9,7 @@ template = f'''\
 from utilities import get_data_as_csv
 \
 raw = get_data_as_csv('{arg}')
-data = [str(row[0]) for row in raw]
+data = [str(row[0]) if len(row) > 0 else "" for row in raw]
 sample = [
 
 ]
