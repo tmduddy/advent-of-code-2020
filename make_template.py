@@ -25,3 +25,6 @@ part1(sample)
 
 with open(f'{arg}.py', 'w') as f:
   f.write(template)
+
+with open(f'input-files/{arg}.csv', 'w') as f:
+    pass
